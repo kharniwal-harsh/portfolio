@@ -3,18 +3,18 @@ import React from 'react';
 // Profile Sidebar Component
 const ProfileSidebar = () => {
   return (
-    <div className="bg-black p-8 lg:p-12 border-r border-gray-800">
+    <div className="bg-[#111114] p-8 lg:p-12 border-r border-gray-800">
       <div className="text-center mb-8">
         <img 
           src="https://images.unsplash.com/photo-1590086782957-93c06ef21604" 
           alt="Profile" 
           className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-gray-700"
         />
-        <h1 className="text-3xl font-bold mb-2">Oskar Frantti Glen</h1>
+        <h1 className="text-3xl font-bold mb-2">Harsh Kharniwal</h1>
         <p className="text-gray-400 text-lg mb-4">Full Stack Web Developer</p>
         <div className="flex items-center justify-center text-gray-400 mb-2">
           <span className="text-red-500 mr-2">📍</span>
-          <span>Melbourne, Australia 🇦🇺</span>
+          <span>Rajasthan, India 🇮🇳</span>
         </div>
         <p className="text-sm text-gray-500 italic">
           Building Real Products For Real Clients, Not Just More Projects
@@ -23,20 +23,22 @@ const ProfileSidebar = () => {
 
       <div className="space-y-4 mb-8">
         <a 
-          href="#" 
+          href="https://drive.google.com/file/d/1QO4vZNzPtKGBq8UG-h-0GvgOIKL576R_/view?usp=sharing" 
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-200"
         >
           📄 Resume
         </a>
         <div className="flex justify-center space-x-4">
-          <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
-            <span className="text-2xl">🐙</span>
-          </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+          <a href="mailto:harshkharniwal9351@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
             <span className="text-2xl">✉️</span>
           </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+          <a href="https://www.linkedin.com/in/harsh-kharniwal9351/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
             <span className="text-2xl">💼</span>
+          </a>
+          <a href="https://github.com/kharniwal-harsh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
+            <span className="text-2xl">🐙</span>
           </a>
         </div>
       </div>
