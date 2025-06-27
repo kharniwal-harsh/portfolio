@@ -71,41 +71,55 @@ const AboutSection = () => {
 const SkillsSection = () => {
   const skillCategories = {
     Languages: [
-      { name: 'JavaScript', color: 'bg-yellow-600' },
-      { name: 'TypeScript', color: 'bg-blue-600' },
+      { name: 'C++', color: 'bg-blue-600' },
       { name: 'Python', color: 'bg-blue-500' },
-      { name: 'C++', color: 'bg-gray-600' },
-      { name: 'C#', color: 'bg-purple-600' },
-      { name: 'Rust', color: 'bg-orange-600' }
+      { name: 'JavaScript', color: 'bg-yellow-600' },
+      { name: 'SQL', color: 'bg-orange-600' },
+      { name: 'HTML', color: 'bg-orange-700' },
+      { name: 'CSS', color: 'bg-blue-700' }
     ],
-    Frameworks: [
-      { name: 'ReactJS', color: 'bg-cyan-500' },
-      { name: 'NextJS', color: 'bg-black border border-white' },
-      { name: 'NestNest', color: 'bg-red-600' },
-      { name: 'Tauri', color: 'bg-orange-500' },
-      { name: 'React Native', color: 'bg-blue-400' },
-      { name: 'ExpressJS', color: 'bg-gray-700' },
-      { name: 'Flask', color: 'bg-gray-800' },
-      { name: 'Django', color: 'bg-green-700' },
-      { name: 'ASP.Net', color: 'bg-purple-700' }
+    Frontend: [
+      { name: 'React.js', color: 'bg-cyan-500' },
+      { name: 'Tailwind CSS', color: 'bg-cyan-400' },
+      { name: 'EJS', color: 'bg-green-600' },
+      { name: 'Bootstrap', color: 'bg-purple-600' },
+      { name: 'HTML5', color: 'bg-orange-600' },
+      { name: 'CSS3', color: 'bg-blue-600' }
     ],
     Backend: [
       { name: 'Node.js', color: 'bg-green-600' },
-      { name: '.NET', color: 'bg-purple-600' },
-      { name: 'REST APIs', color: 'bg-blue-700' },
-      { name: 'Microservices', color: 'bg-indigo-600' }
+      { name: 'Express.js', color: 'bg-gray-700' },
+      { name: 'REST APIs', color: 'bg-blue-700' }
     ],
-    Databases: [
-      { name: 'PostgreSQL', color: 'bg-blue-800' },
-      { name: 'SQL', color: 'bg-orange-700' },
+    'Database & Storage': [
       { name: 'MongoDB', color: 'bg-green-600' },
-      { name: 'Elasticsearch', color: 'bg-yellow-700' }
+      { name: 'Firebase', color: 'bg-orange-500' },
+      { name: 'MySQL', color: 'bg-blue-800' }
     ],
-    Practices: [
-      { name: 'Microservices', color: 'bg-yellow-600' },
-      { name: 'Microfrontend', color: 'bg-green-700' },
-      { name: 'Agile', color: 'bg-blue-600' },
-      { name: 'Git', color: 'bg-orange-600' }
+    'Machine Learning & Data': [
+      { name: 'Pandas', color: 'bg-blue-600' },
+      { name: 'NumPy', color: 'bg-blue-700' },
+      { name: 'Matplotlib', color: 'bg-orange-600' },
+      { name: 'Seaborn', color: 'bg-cyan-600' },
+      { name: 'Scikit-learn', color: 'bg-orange-700' },
+      { name: 'dlib', color: 'bg-green-700' },
+      { name: 'OpenCV', color: 'bg-blue-800' }
+    ],
+    'Tools & Platforms': [
+      { name: 'Git', color: 'bg-orange-600' },
+      { name: 'GitHub', color: 'bg-gray-800' },
+      { name: 'Netlify', color: 'bg-teal-600' },
+      { name: 'Streamlit', color: 'bg-red-600' },
+      { name: 'VS Code', color: 'bg-blue-600' },
+      { name: 'Postman', color: 'bg-orange-500' },
+      { name: 'GitHub Pages', color: 'bg-gray-700' }
+    ],
+    Others: [
+      { name: 'OOP', color: 'bg-purple-600' },
+      { name: 'DBMS', color: 'bg-indigo-600' },
+      { name: 'Operating Systems', color: 'bg-gray-600' },
+      { name: 'Problem Solving (DSA)', color: 'bg-green-600' },
+      { name: 'RESTful APIs', color: 'bg-blue-700' }
     ]
   };
 
