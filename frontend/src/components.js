@@ -242,17 +242,17 @@ const EducationSection = () => {
   const education = [
     {
       degree: 'Bachelor of Computer Science',
-      institution: 'Deakin University',
-      location: 'Burwood, Victoria',
-      duration: 'July 2022 - Present',
+      institution: 'University',
+      location: 'Rajasthan, India',
+      duration: '2020 - 2024',
       logo: '🎓'
     },
     {
-      degree: 'Diploma of Information Technology',
-      institution: 'Deakin College',
-      location: 'Burwood, Victoria',
-      duration: 'March 2021 - March 2022',
-      logo: '🎓'
+      degree: 'Higher Secondary Education',
+      institution: 'Senior Secondary School',
+      location: 'Rajasthan, India',
+      duration: '2018 - 2020',
+      logo: '📚'
     }
   ];
 
