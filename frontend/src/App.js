@@ -1,38 +1,58 @@
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import Components from "./components";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+const { 
+  ProfileSidebar, 
+  AboutSection, 
+  SkillsSection, 
+  ExperienceSection, 
+  EducationSection, 
+  ProjectsSection 
+} = Components;
 
 const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
+  const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
-    helloWorldApi();
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section[id]');
+      let currentSection = 'about';
+      
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100) {
+          currentSection = section.id;
+        }
+      });
+      
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
+    <div className="min-h-screen bg-black text-white">
+      <div className="flex flex-col lg:flex-row">
+        {/* Sidebar */}
+        <div className="lg:w-1/3 lg:fixed lg:h-screen lg:overflow-y-auto">
+          <ProfileSidebar />
+        </div>
+        
+        {/* Main Content */}
+        <div className="lg:w-2/3 lg:ml-[33.333333%]">
+          <main className="px-6 lg:px-12 py-8">
+            <AboutSection />
+            <SkillsSection />
+            <ExperienceSection />
+            <EducationSection />
+            <ProjectsSection />
+          </main>
+        </div>
+      </div>
     </div>
   );
 };
