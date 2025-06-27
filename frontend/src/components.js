@@ -284,27 +284,43 @@ const EducationSection = () => {
 const ProjectsSection = () => {
   const projects = [
     {
-      name: 'HomeGame: Home Poker Analytics Manager',
-      description: 'Developed a feature-rich mobile application for managing and analyzing home poker games using React Native and Supabase.',
+      name: 'E-Commerce Web Application',
+      description: 'A full-stack e-commerce platform built with React.js, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, and payment integration.',
       features: [
-        'Advanced analytics engine providing insights into gameplay, win rates, and bankroll management support across multiple games',
-        'Implemented offline mode with data synchronization and integrated with party APIs for quick calculation'
+        'Implemented secure user authentication and authorization system',
+        'Built responsive frontend with React.js and modern CSS frameworks',
+        'Developed RESTful APIs for product management and order processing',
+        'Integrated payment gateway and real-time inventory management'
       ],
-      tech: ['React Native', 'Supabase', 'JavaScript', 'Analytics', 'Mobile Development'],
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Stripe API'],
       links: ['View Code', 'Live Demo'],
-      icon: '🃏'
+      icon: '🛒'
     },
     {
-      name: 'BrewPoints: Cafe Loyalty App',
-      description: 'Developed a full-stack loyalty app solution for independent cafes, featuring React Native mobile apps and a Node.js backend with GraphQL API.',
+      name: 'Data Analytics Dashboard',
+      description: 'An interactive dashboard for data visualization and analysis using Python, Pandas, and Streamlit. Processes large datasets and provides insightful charts and metrics.',
       features: [
-        'Designed and deployed various Point of Sale (POS) systems using a flexible adapter pattern',
-        'Implemented real-time order tracking and notifications using SocketIO',
-        'Built a comprehensive loyalty program system with analytics dashboard for cafe owners'
+        'Built interactive data visualization components using Matplotlib and Seaborn',
+        'Implemented data processing pipelines with Pandas and NumPy',
+        'Created real-time dashboard with Streamlit for data exploration',
+        'Applied machine learning algorithms for predictive analytics'
       ],
-      tech: ['React Native', 'Node.js', 'GraphQL', 'MongoDB', 'Analytics Dashboard', 'Real-time'],
+      tech: ['Python', 'Pandas', 'Streamlit', 'Matplotlib', 'Scikit-learn', 'Data Analysis'],
       links: ['View Code', 'Live Demo'],
-      icon: '☕'
+      icon: '📊'
+    },
+    {
+      name: 'Task Management App',
+      description: 'A collaborative task management application with real-time updates, built using React.js frontend and Firebase backend for seamless team collaboration.',
+      features: [
+        'Developed real-time collaborative features using Firebase Firestore',
+        'Implemented drag-and-drop functionality for task organization',
+        'Built responsive UI with modern design principles',
+        'Added user authentication and role-based access control'
+      ],
+      tech: ['React.js', 'Firebase', 'CSS3', 'JavaScript', 'Authentication'],
+      links: ['View Code', 'Live Demo'],
+      icon: '📝'
     }
   ];
 
@@ -315,7 +331,7 @@ const ProjectsSection = () => {
       <div className="mb-6">
         <div className="flex space-x-4">
           <button className="px-4 py-2 bg-blue-600 text-white rounded-lg">Personal Projects</button>
-          <button className="px-4 py-2 bg-gray-800 text-gray-300 rounded-lg hover:bg-gray-700">Client Projects</button>
+          <button className="px-4 py-2 bg-gray-800 text-gray-300 rounded-lg hover:bg-gray-700">Academic Projects</button>
         </div>
       </div>
       
