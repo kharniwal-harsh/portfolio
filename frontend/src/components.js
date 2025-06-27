@@ -60,8 +60,8 @@ const ProfileSidebar = () => {
 const AboutSection = () => {
   return (
     <section id="about" className="mb-16">
-      <h2 className="text-4xl font-bold mb-8">About Me</h2>
-      <div className="text-gray-300 space-y-4 leading-relaxed">
+      <h2 className="text-5xl font-bold mb-8">About Me</h2>
+      <div className="text-gray-300 space-y-4 leading-relaxed text-lg">
         <p>
           I'm a 22-year-old experienced Full Stack Developer with a knack for building products that make a difference. A Computer Science undergrad with a strong foundation in full-stack development, real-time systems, and applied ML. Proven record of building scalable applications with measurable impact across performance and engagement.
         </p>
