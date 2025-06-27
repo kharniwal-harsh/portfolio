@@ -128,16 +128,16 @@ const SkillsSection = () => {
 
   return (
     <section id="skills" className="mb-16">
-      <h2 className="text-4xl font-bold mb-8">Skills</h2>
+      <h2 className="text-5xl font-bold mb-8">Skills</h2>
       
       {Object.entries(skillCategories).map(([category, skills]) => (
         <div key={category} className="mb-8">
-          <h3 className="text-xl font-semibold mb-4 text-gray-300">{category}</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-gray-300">{category}</h3>
           <div className="flex flex-wrap gap-3">
             {skills.map((skill) => (
               <span 
                 key={skill.name}
-                className={`px-3 py-1 rounded-full text-sm font-medium text-white ${skill.color}`}
+                className={`px-4 py-2 rounded-full text-base font-medium text-white ${skill.color}`}
               >
                 {skill.name}
               </span>
