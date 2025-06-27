@@ -280,77 +280,98 @@ const EducationSection = () => {
 const ProjectsSection = () => {
   const projects = [
     {
-      name: 'E-Commerce Web Application',
-      description: 'A full-stack e-commerce platform built with React.js, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, and payment integration.',
+      name: 'Attendance System Using Face Recognition',
+      tech: 'Flask, Python, Face Recognition, MongoDB',
+      description: 'Engineered a facial recognition-based attendance system using Flask + MongoDB, leveraging deep learning with Dlib and Face Recognition for accurate identity verification.',
       features: [
-        'Implemented secure user authentication and authorization system',
-        'Built responsive frontend with React.js and modern CSS frameworks',
-        'Developed RESTful APIs for product management and order processing',
-        'Integrated payment gateway and real-time inventory management'
+        'Engineered a facial recognition-based attendance system using Flask + MongoDB, leveraging deep learning with Dlib and Face Recognition for accurate identity verification.',
+        'Integrated JWT-based authentication (Passport.js), achieving a 100% reduction in unauthorized access and enhancing overall security.',
+        'Automated attendance notifications and performance reports, increasing student attendance compliance by 30%'
       ],
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Stripe API'],
-      links: ['View Code', 'Live Demo'],
-      icon: '🛒'
+      techStack: ['Flask', 'Python', 'Face Recognition', 'MongoDB', 'Dlib', 'JWT'],
+      liveDemo: 'https://kharniwal-harsh.github.io/attendance-system-demo/',
+      viewCode: 'https://github.com/kharniwal-harsh/attendance-system-demo',
+      icon: '👤'
     },
     {
-      name: 'Data Analytics Dashboard',
-      description: 'An interactive dashboard for data visualization and analysis using Python, Pandas, and Streamlit. Processes large datasets and provides insightful charts and metrics.',
+      name: 'Interactive 3D Portfolio Website',
+      tech: 'React.js, Three.js, Tailwind CSS, Git/GitHub Pages',
+      description: 'Built a visually engaging 3D personal portfolio using React.js + Three.js, integrating custom shaders and camera controls to deliver an immersive user experience.',
       features: [
-        'Built interactive data visualization components using Matplotlib and Seaborn',
-        'Implemented data processing pipelines with Pandas and NumPy',
-        'Created real-time dashboard with Streamlit for data exploration',
-        'Applied machine learning algorithms for predictive analytics'
+        'Built a visually engaging 3D personal portfolio using React.js + Three.js, integrating custom shaders and camera controls to deliver an immersive user experience.',
+        'Utilized GLTF models and optimized asset loading with lazy loading, improving initial page load time by 35%.',
+        'Designed a responsive layout with Tailwind CSS, ensuring seamless cross-browser compatibility and WCAG-compliant accessibility.',
+        'Boosted user engagement by 40% through interactive animations, smooth transitions, and intuitive navigation'
       ],
-      tech: ['Python', 'Pandas', 'Streamlit', 'Matplotlib', 'Scikit-learn', 'Data Analysis'],
-      links: ['View Code', 'Live Demo'],
-      icon: '📊'
+      techStack: ['React.js', 'Three.js', 'Tailwind CSS', 'Git', 'GitHub Pages', 'GLTF'],
+      liveDemo: 'https://kharniwal-harsh.github.io/threejs-portfolio-main/',
+      viewCode: 'https://github.com/kharniwal-harsh/threejs-portfolio-main',
+      icon: '🌐'
     },
     {
-      name: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, built using React.js frontend and Firebase backend for seamless team collaboration.',
+      name: 'WhatsApp-Chat-Analyzer',
+      tech: 'Python, Matplotlib, Pandas, Plotly, Streamlit',
+      description: 'WhatsApp chat Analyzer is a WebApp where anyone either tech or non-tech person can analyze their WhatsApp chat data. With this, you can get information such as Which person is active in the chat?',
       features: [
-        'Developed real-time collaborative features using Firebase Firestore',
-        'Implemented drag-and-drop functionality for task organization',
-        'Built responsive UI with modern design principles',
-        'Added user authentication and role-based access control'
+        'WhatsApp chat Analyzer is a WebApp where anyone either tech or non-tech person can analyze their WhatsApp chat data. With this, you can get information such as Which person is active in the chat?',
+        'And many other insights you can get from this Analyzer. Anyone obviously, who has WhatsApp account can use this WebApp.',
+        'He/She can export their chat either group or individual in text format (without media) and upload it in the WebApp.',
+        'It can handle both English and Portuguese format of WhatsApp chat. Built with Python, matplotlib, pandas, plotly, and Streamlit.'
       ],
-      tech: ['React.js', 'Firebase', 'CSS3', 'JavaScript', 'Authentication'],
-      links: ['View Code', 'Live Demo'],
-      icon: '📝'
+      techStack: ['Python', 'Matplotlib', 'Pandas', 'Plotly', 'Streamlit'],
+      liveDemo: 'https://whatsappchatanalyzerbyhk.streamlit.app/',
+      viewCode: 'https://github.com/kharniwal-harsh/wp_analyzer/blob/main/whatsapp-chat-analyser-master/README.md',
+      icon: '💬'
+    },
+    {
+      name: 'Smart Agriculture System using IoT',
+      tech: 'Arduino | Soil Moisture Sensor | DHT11 | Water Pump Relay Module | LCD Display | C/C++',
+      description: 'Developed an IoT-based smart agriculture system to automate irrigation by monitoring real-time soil moisture, temperature, and humidity levels.',
+      features: [
+        'Developed an IoT-based smart agriculture system to automate irrigation by monitoring real-time soil moisture, temperature, and humidity levels.',
+        'Programmed Arduino to collect sensor data and trigger a water pump automatically when soil moisture drops below a defined threshold, optimizing water usage.',
+        'Integrated an LCD display to show live sensor readings, enabling on-site monitoring by farmers.',
+        'Reduced manual intervention by 70% and ensured timely irrigation, potentially increasing crop yield and resource efficiency.',
+        'Designed a modular system allowing easy extension to additional sensors or IoT cloud platforms for remote monitoring.'
+      ],
+      techStack: ['Arduino', 'Soil Moisture Sensor', 'DHT11', 'Water Pump Relay', 'LCD Display', 'C/C++'],
+      liveDemo: 'https://github.com/kharniwal-harsh',
+      viewCode: 'https://github.com/kharniwal-harsh',
+      icon: '🌱'
     }
   ];
 
   return (
     <section id="projects" className="mb-16">
-      <h2 className="text-4xl font-bold mb-8">Projects</h2>
+      <h2 className="text-5xl font-bold mb-8">Projects</h2>
       
       <div className="mb-6">
         <div className="flex space-x-4">
-          <button className="px-4 py-2 bg-blue-600 text-white rounded-lg">Personal Projects</button>
-          <button className="px-4 py-2 bg-gray-800 text-gray-300 rounded-lg hover:bg-gray-700">Academic Projects</button>
+          <button className="px-4 py-2 bg-blue-600 text-white rounded-lg text-base">Personal Projects</button>
         </div>
       </div>
       
       <div className="space-y-8">
         {projects.map((project, index) => (
-          <div key={index} className="p-6 bg-gray-900 rounded-lg border border-gray-800">
+          <div key={index} className="p-6 bg-[#111114] rounded-lg border border-gray-800">
             <div className="flex items-start gap-4 mb-4">
               <div className="text-3xl">{project.icon}</div>
               <div className="flex-grow">
-                <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
-                <p className="text-gray-300 mb-4">{project.description}</p>
+                <h3 className="text-2xl font-semibold mb-2">{project.name}</h3>
+                <p className="text-base text-green-400 font-medium mb-4">{project.tech}</p>
+                <p className="text-gray-300 mb-4 text-base">{project.description}</p>
                 
-                <ul className="list-disc list-inside text-gray-300 space-y-2 mb-4">
+                <ul className="list-disc list-inside text-gray-300 space-y-2 mb-4 text-base">
                   {project.features.map((feature, idx) => (
                     <li key={idx}>{feature}</li>
                   ))}
                 </ul>
                 
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map((tech) => (
+                  {project.techStack.map((tech) => (
                     <span 
                       key={tech}
-                      className="px-2 py-1 bg-green-700 text-white text-xs rounded-full"
+                      className="px-3 py-1 bg-green-700 text-white text-sm rounded-full"
                     >
                       {tech}
                     </span>
@@ -358,15 +379,22 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div className="flex gap-4">
-                  {project.links.map((link) => (
-                    <a 
-                      key={link}
-                      href="#" 
-                      className="text-blue-400 hover:text-blue-300 underline"
-                    >
-                      {link}
-                    </a>
-                  ))}
+                  <a 
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 underline text-base"
+                  >
+                    Live Demo
+                  </a>
+                  <a 
+                    href={project.viewCode}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 underline text-base"
+                  >
+                    View Code
+                  </a>
                 </div>
               </div>
             </div>
