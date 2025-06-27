@@ -225,37 +225,49 @@ const ExperienceSection = () => {
 const EducationSection = () => {
   const education = [
     {
-      degree: 'Bachelor of Computer Science',
-      institution: 'University',
-      location: 'Rajasthan, India',
-      duration: '2020 - 2024',
+      degree: 'Bachelor of Science in Computer Science',
+      institution: 'Rajasthan Technical University',
+      location: 'Kota, RAJASTHAN',
+      duration: '2021 – 2025',
+      grade: 'CGPA: 8.14',
       logo: '🎓'
     },
     {
-      degree: 'Higher Secondary Education',
-      institution: 'Senior Secondary School',
-      location: 'Rajasthan, India',
-      duration: '2018 - 2020',
+      degree: 'CBSE-Higher Secondary Education (XII)',
+      institution: 'Lal Bahadur Shastri Sr. Sec. School',
+      location: 'Kota, India',
+      duration: '2020 - 2021',
+      grade: 'PERCENTAGE: 78%',
       logo: '📚'
+    },
+    {
+      degree: 'CBSE-Secondary Education (X)',
+      institution: 'Lal Bahadur Shastri Sr. Sec. School',
+      location: 'Kota, India',
+      duration: '2018 - 2019',
+      grade: 'PERCENTAGE: 79.2%',
+      logo: '📖'
     }
   ];
 
   return (
     <section id="education" className="mb-16">
-      <h2 className="text-4xl font-bold mb-8">Education</h2>
+      <h2 className="text-5xl font-bold mb-8">Education</h2>
       
       <div className="space-y-6">
         {education.map((edu, index) => (
-          <div key={index} className="flex gap-6 p-6 bg-gray-900 rounded-lg border border-gray-800">
+          <div key={index} className="flex gap-6 p-6 bg-[#111114] rounded-lg border border-gray-800">
             <div className="flex-shrink-0">
               <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-2xl">
                 {edu.logo}
               </div>
             </div>
             <div className="flex-grow">
-              <h3 className="text-xl font-semibold mb-1">{edu.degree}</h3>
-              <p className="text-gray-400 mb-1">{edu.institution}</p>
-              <p className="text-sm text-gray-500">{edu.duration}</p>
+              <h3 className="text-2xl font-semibold mb-1">{edu.degree}</h3>
+              <p className="text-gray-400 mb-1 text-lg">{edu.institution}</p>
+              <p className="text-base text-gray-500 mb-1">{edu.location}</p>
+              <p className="text-base text-gray-500 mb-1">{edu.duration}</p>
+              <p className="text-base text-green-400 font-semibold">{edu.grade}</p>
             </div>
           </div>
         ))}
