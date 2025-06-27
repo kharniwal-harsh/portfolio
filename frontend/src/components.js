@@ -153,67 +153,51 @@ const SkillsSection = () => {
 const ExperienceSection = () => {
   const experiences = [
     {
-      company: 'Personal Projects',
+      company: 'CodeAlpha',
       logo: '💻',
-      position: 'Full Stack Developer',
-      location: 'Self-Directed',
-      duration: '2022 - Present (2+ years)',
-      description: [
-        'Built multiple full-stack web applications using React.js, Node.js, and MongoDB',
-        'Implemented RESTful APIs and integrated with third-party services',
-        'Deployed applications on various platforms including Netlify and GitHub Pages',
-        'Applied machine learning techniques to real-world problems using Python libraries'
-      ],
-      skills: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Machine Learning', 'REST APIs']
-    },
-    {
-      company: 'Open Source Contributions',
-      logo: '🌟',
-      position: 'Contributor',
-      location: 'GitHub',
-      duration: '2021 - Present',
-      description: [
-        'Contributed to various open-source projects on GitHub',
-        'Collaborated with developers worldwide on code improvements and bug fixes',
-        'Gained experience in collaborative development and version control',
-        'Enhanced problem-solving skills through diverse project challenges'
-      ],
-      skills: ['Git', 'GitHub', 'Open Source', 'Collaboration', 'Code Review']
-    },
-    {
-      company: 'Freelance Development',
-      logo: '🚀',
-      position: 'Freelance Developer',
+      position: 'Frontend Developer Intern',
       location: 'Remote',
-      duration: '2022 - Present',
+      duration: '05/2024 – 07/2024',
       description: [
-        'Developed custom web solutions for small businesses and startups',
-        'Created responsive websites using modern frontend technologies',
-        'Implemented database solutions and API integrations',
-        'Delivered projects on time while maintaining high code quality standards'
+        'Tech Stack: HTML, CSS, Tailwind CSS, Bootstrap, React.js',
+        'Developed responsive user interfaces using modern frontend technologies, ensuring seamless performance across devices.',
+        'Integrated reusable UI components with React.js + Tailwind CSS, contributing to scalable and maintainable code-bases.',
+        'Improved user engagement by 30% through optimization of layout structure, responsiveness, and accessibility.'
       ],
-      skills: ['Frontend Development', 'Backend Development', 'Client Management', 'Project Delivery']
+      skills: ['HTML', 'CSS', 'Tailwind CSS', 'Bootstrap', 'React.js']
+    },
+    {
+      company: 'CHEGG India',
+      logo: '📚',
+      position: 'Subject Matter Expert',
+      location: 'Remote',
+      duration: '01/2022 – 02/2023',
+      description: [
+        'Resolved student queries in Data Structures & Algorithms, OOP, C++/ Python, achieving an 88%+ satisfaction rating.',
+        'Authored and reviewed 120+ high-quality textbook solutions and practice problems'
+      ],
+      skills: ['Data Structures', 'Algorithms', 'OOP', 'C++', 'Python', 'Problem Solving']
     }
   ];
 
   return (
     <section id="experience" className="mb-16">
-      <h2 className="text-4xl font-bold mb-8">Experience</h2>
+      <h2 className="text-5xl font-bold mb-8">Experience</h2>
       
       <div className="space-y-8">
         {experiences.map((exp, index) => (
-          <div key={index} className="flex gap-6 p-6 bg-gray-900 rounded-lg border border-gray-800">
+          <div key={index} className="flex gap-6 p-6 bg-[#111114] rounded-lg border border-gray-800">
             <div className="flex-shrink-0">
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl">
                 {exp.logo}
               </div>
             </div>
             <div className="flex-grow">
-              <h3 className="text-xl font-semibold mb-1">{exp.position}</h3>
-              <p className="text-gray-400 mb-1">{exp.company}, {exp.location}</p>
-              <p className="text-sm text-gray-500 mb-4">{exp.duration}</p>
+              <h3 className="text-2xl font-semibold mb-1">{exp.position}</h3>
+              <p className="text-gray-400 mb-1 text-lg">{exp.company}, {exp.location}</p>
+              <p className="text-base text-gray-500 mb-4">{exp.duration}</p>
               
-              <ul className="list-disc list-inside text-gray-300 space-y-2 mb-4">
+              <ul className="list-disc list-inside text-gray-300 space-y-2 mb-4 text-base">
                 {exp.description.map((item, idx) => (
                   <li key={idx}>{item}</li>
                 ))}
@@ -223,7 +207,7 @@ const ExperienceSection = () => {
                 {exp.skills.map((skill) => (
                   <span 
                     key={skill}
-                    className="px-2 py-1 bg-green-700 text-white text-xs rounded-full"
+                    className="px-3 py-1 bg-green-700 text-white text-sm rounded-full"
                   >
                     {skill}
                   </span>
