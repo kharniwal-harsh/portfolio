@@ -37,13 +37,13 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-[#111114] text-white">
       <div className="flex flex-col lg:flex-row">
-        {/* Sidebar */}
-        <div className="lg:w-1/3 lg:fixed lg:h-screen lg:overflow-y-auto">
+        {/* Sidebar - 40% width */}
+        <div className="lg:w-[40%] lg:fixed lg:h-screen lg:overflow-y-auto">
           <ProfileSidebar />
         </div>
         
-        {/* Main Content */}
-        <div className="lg:w-2/3 lg:ml-[33.333333%]">
+        {/* Main Content - 60% width */}
+        <div className="lg:w-[60%] lg:ml-[40%]">
           <main className="px-6 lg:px-12 py-8">
             <AboutSection />
             <SkillsSection />
