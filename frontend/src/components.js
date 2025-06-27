@@ -153,75 +153,46 @@ const SkillsSection = () => {
 const ExperienceSection = () => {
   const experiences = [
     {
-      company: 'Juvare',
-      logo: '🏢',
-      position: 'Front End Web Developer',
-      location: 'Melbourne, Australia',
-      duration: 'March 2025 - Present (3 months)',
+      company: 'Personal Projects',
+      logo: '💻',
+      position: 'Full Stack Developer',
+      location: 'Self-Directed',
+      duration: '2022 - Present (2+ years)',
       description: [
-        'Configure and customize WebEOC framework solutions to meet client requirements for emergency/incident response',
-        'Collaborate directly with clients to understand requirements, provide technical implementation support across Australia and New Zealand',
-        'Provide 24/7 technical support and assist in Emergency Operations Centre (EOC) activations when required',
-        'Develop and implement process reviews, online training content, and exercise assessments'
+        'Built multiple full-stack web applications using React.js, Node.js, and MongoDB',
+        'Implemented RESTful APIs and integrated with third-party services',
+        'Deployed applications on various platforms including Netlify and GitHub Pages',
+        'Applied machine learning techniques to real-world problems using Python libraries'
       ],
-      skills: ['WebEOC', 'Emergency Management', 'Client Support', 'Technical Implementation']
+      skills: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Machine Learning', 'REST APIs']
     },
     {
-      company: 'Gluco Health',
-      logo: '🏥',
-      position: 'Co-Founder & Technical Lead',
-      location: 'Melbourne, Victoria',
-      duration: 'February 2025 - Present (3 months)',
+      company: 'Open Source Contributions',
+      logo: '🌟',
+      position: 'Contributor',
+      location: 'GitHub',
+      duration: '2021 - Present',
       description: [
-        'Leading development of GlucoseScan, an innovative mobile application helping diabetic individuals manage their glucose responses to different food combinations',
-        'Architecting and implementing a cross-platform mobile application using React Native and Expo',
-        'Designing and implementing a comprehensive food database to analyze and predict glucose responses to different food combinations',
-        'Collaborating closely with healthcare professionals and diabetic individuals to ensure the application meets real needs and provides accurate insights'
+        'Contributed to various open-source projects on GitHub',
+        'Collaborated with developers worldwide on code improvements and bug fixes',
+        'Gained experience in collaborative development and version control',
+        'Enhanced problem-solving skills through diverse project challenges'
       ],
-      skills: ['React Native', 'Expo', 'Healthcare', 'Mobile Development', 'Database Design', 'Cross-platform']
+      skills: ['Git', 'GitHub', 'Open Source', 'Collaboration', 'Code Review']
     },
     {
-      company: 'Freelance',
-      logo: '💼',
-      position: 'Freelance Full-Stack Web Developer',
-      location: 'Self-Employed, Melbourne, Victoria',
-      duration: '2022 - Present (3 years 3 months)',
+      company: 'Freelance Development',
+      logo: '🚀',
+      position: 'Freelance Developer',
+      location: 'Remote',
+      duration: '2022 - Present',
       description: [
-        'Successfully delivered 20+ projects ranging from basic dashboards to SEO-optimized landing pages to fully-fledged applications',
-        'Developed web-based solutions tailored to client needs, ensuring high performance and user experience',
-        'Worked with modern web technologies including React, NextJS, and Supabase to build scalable applications',
-        'Maintained long-term client relationships, including planning, development, and deployment'
+        'Developed custom web solutions for small businesses and startups',
+        'Created responsive websites using modern frontend technologies',
+        'Implemented database solutions and API integrations',
+        'Delivered projects on time while maintaining high code quality standards'
       ],
-      skills: ['React', 'NextJS', 'Supabase', 'Freelance', 'SEO', 'Full-Stack Development']
-    },
-    {
-      company: 'Shifti',
-      logo: '🔄',
-      position: 'Founder & Lead Developer',
-      location: 'Melbourne, Victoria',
-      duration: 'January 2023 - January 2024 (1 year)',
-      description: [
-        'Led the development of an innovative AI-powered shift scheduling platform for the hospitality industry',
-        'Architected and implemented a scalable microservices-based backend using NodeJS and Django',
-        'Designed and built an admin dashboard and mobile application for comprehensive shift management',
-        'Integrated advanced machine learning algorithms for intelligent shift allocation and demand forecasting',
-        'Managed a team of developers, fostering a culture of innovation and continuous improvement'
-      ],
-      skills: ['Startup', 'NodeJS', 'Django', 'Microservices', 'Mobile Development', 'Team Management']
-    },
-    {
-      company: 'Pheonic',
-      logo: '📱',
-      position: 'Software Development Intern',
-      location: 'Melbourne, Victoria',
-      duration: 'March 2019 - November 2019 (9 months)',
-      description: [
-        'Demonstrated proficiency in Angular 8, React, .NET, and microservices',
-        'Developed effective solutions to complex issues and debugged code efficiently',
-        'Adopted to new technologies and worked effectively environment and worked with both legacy and modern technologies',
-        'Collaborated with cross-functional teams, enhancing communication and teamwork skills'
-      ],
-      skills: ['Angular', 'React', '.NET', 'Microservices']
+      skills: ['Frontend Development', 'Backend Development', 'Client Management', 'Project Delivery']
     }
   ];
 
