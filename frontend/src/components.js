@@ -45,9 +45,12 @@ const ProfileSidebar = () => {
 
       <div className="border-t border-gray-800 pt-8">
         <h3 className="text-xl font-semibold mb-4">Want to Work Together?</h3>
-        <button className="w-full bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-colors duration-200">
+        <a 
+          href="mailto:harshkharniwal9351@gmail.com"
+          className="w-full block text-center bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-colors duration-200"
+        >
           Get in Touch
-        </button>
+        </a>
       </div>
     </div>
   );
