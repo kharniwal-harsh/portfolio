@@ -342,48 +342,48 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section id="projects" className="mb-16">
-      <h2 className="text-5xl font-bold mb-8">Projects</h2>
+    <section id="projects" className="mb-12">
+      <h2 className="text-3xl font-bold mb-6">Projects</h2>
       
-      <div className="mb-6">
+      <div className="mb-4">
         <div className="flex space-x-4">
-          <button className="px-4 py-2 bg-blue-600 text-white rounded-lg text-base">Personal Projects</button>
+          <button className="px-3 py-1.5 bg-blue-600 text-white rounded-lg text-sm">Personal Projects</button>
         </div>
       </div>
       
-      <div className="space-y-8">
+      <div className="space-y-6">
         {projects.map((project, index) => (
-          <div key={index} className="p-6 bg-[#111114] rounded-lg border border-gray-800">
-            <div className="flex items-start gap-4 mb-4">
-              <div className="text-3xl">{project.icon}</div>
+          <div key={index} className="p-5 bg-[#111114] rounded-lg border border-gray-800">
+            <div className="flex items-start gap-3 mb-3">
+              <div className="text-2xl">{project.icon}</div>
               <div className="flex-grow">
-                <h3 className="text-2xl font-semibold mb-2">{project.name}</h3>
-                <p className="text-base text-green-400 font-medium mb-4">{project.tech}</p>
-                <p className="text-gray-300 mb-4 text-base">{project.description}</p>
+                <h3 className="text-lg font-semibold mb-1">{project.name}</h3>
+                <p className="text-sm text-green-400 font-medium mb-2">{project.tech}</p>
+                <p className="text-gray-300 mb-3 text-sm">{project.description}</p>
                 
-                <ul className="list-disc list-inside text-gray-300 space-y-2 mb-4 text-base">
+                <ul className="list-disc list-inside text-gray-300 space-y-1 mb-3 text-sm">
                   {project.features.map((feature, idx) => (
                     <li key={idx}>{feature}</li>
                   ))}
                 </ul>
                 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-1.5 mb-3">
                   {project.techStack.map((tech) => (
                     <span 
                       key={tech}
-                      className="px-3 py-1 bg-green-700 text-white text-sm rounded-full"
+                      className="px-2 py-1 bg-green-700 text-white text-xs rounded-full"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
                 
-                <div className="flex gap-4">
+                <div className="flex gap-3">
                   <a 
                     href={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 underline text-base"
+                    className="text-blue-400 hover:text-blue-300 underline text-sm"
                   >
                     Live Demo
                   </a>
@@ -391,7 +391,7 @@ const ProjectsSection = () => {
                     href={project.viewCode}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 underline text-base"
+                    className="text-blue-400 hover:text-blue-300 underline text-sm"
                   >
                     View Code
                   </a>
