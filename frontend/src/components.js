@@ -3,18 +3,18 @@ import React from 'react';
 // Profile Sidebar Component
 const ProfileSidebar = () => {
   return (
-    <div className="bg-[#111114] p-8 border-r border-gray-800 h-full flex flex-col items-center text-center">
+    <div className="bg-[#101011] p-8 border-r border-gray-800 h-full flex flex-col items-center">
       <div className="mb-8">
         <img 
-          src="https://images.unsplash.com/photo-1590086782957-93c06ef21604" 
+          src="/img1.jpeg" 
           alt="Profile" 
-          className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-gray-700"
+          className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-0 border-gray-700"
         />
-        <h1 className="text-3xl font-bold mb-2">Harsh Kharniwal</h1>
-        <p className="text-gray-400 text-lg mb-4">Full Stack Web Developer</p>
-        <div className="flex items-center justify-center text-gray-400 mb-4">
+        <h1 className="text-4xl font-bold mb-2">Harsh Kharniwal</h1>
+        <p className="text-gray-400 text-xl mb-4">Full Stack Web Developer</p>
+        <div className="flex items-center  text-gray-400 mb-4">
           <span className="text-red-500 mr-2">📍</span>
-          <span className="text-base">Rajasthan, India 🇮🇳</span>
+          <span className="text-xl">Rajasthan, India 🇮🇳</span>
         </div>
         <p className="text-sm text-gray-500 italic leading-relaxed max-w-xs mx-auto">
           Building Real Products For Real Clients, Not Just More Projects
@@ -26,25 +26,25 @@ const ProfileSidebar = () => {
           href="https://drive.google.com/file/d/1QO4vZNzPtKGBq8UG-h-0GvgOIKL576R_/view?usp=sharing" 
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-lg transition-colors duration-200 text-sm font-medium w-full"
+          className="w-full block text-center bg-#101011 hover:bg-white text-white hover:text-black px-4 py-2 rounded-lg transition-colors duration-200 text-sm border border-white"
         >
-          📄 Resume
+          <img src="https://img.icons8.com/?size=100&id=O0rFPukE4XcO&format=png&color=000000" alt="Resume" className="inline-block w-5 h-5 mr-2 align-middle" /> Resume
         </a>
         <div className="flex justify-center space-x-4">
           <a href="mailto:harshkharniwal9351@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
-            <span className="text-xl">✉️</span>
+            <img src="https://img.icons8.com/?size=100&id=tnnUFgHrPmR0&format=png&color=000000" alt="Mail" className="w-7 h-7" />
           </a>
           <a href="https://www.linkedin.com/in/harsh-kharniwal9351/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
-            <span className="text-xl">💼</span>
+            <img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="Mail" className="w-8 h-7" />
           </a>
           <a href="https://github.com/kharniwal-harsh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
-            <span className="text-xl">🐙</span>
+            <img src="https://img.icons8.com/?size=100&id=BbkEmvb97OHk&format=png&color=000000" alt="Mail" className="w-7 h-7" />
           </a>
         </div>
       </div>
 
       <div className="border-t border-gray-800 pt-8 w-full max-w-xs">
-        <h3 className="text-xl font-semibold mb-4">Want to Work Together?</h3>
+        <h3 className="text-2xl font-semibold mb-4">Want to Work Together?</h3>
         <a 
           href="mailto:harshkharniwal9351@gmail.com"
           className="w-full block text-center bg-gray-700 hover:bg-gray-600 text-gray-200 px-4 py-2 rounded-lg transition-colors duration-200 text-sm"
@@ -63,7 +63,7 @@ const AboutSection = () => {
       <h2 className="text-3xl font-bold mb-6">About Me</h2>
       <div className="text-gray-300 space-y-4 leading-relaxed text-base">
         <p>
-          I'm a 22-year-old experienced Full Stack Developer with a knack for building products that make a difference. A Computer Science undergrad with a strong foundation in full-stack development, real-time systems, and applied ML. Proven record of building scalable applications with measurable impact across performance and engagement.
+          I'm a 20-year-old, Full Stack Developer with a knack for building products that make a difference. A Computer Science undergrad with a strong foundation in full-stack development, real-time systems, and applied ML. Proven record of building scalable applications with measurable impact across performance and engagement.
         </p>
       </div>
     </section>
@@ -132,7 +132,7 @@ const SkillsSection = () => {
       
       {Object.entries(skillCategories).map(([category, skills]) => (
         <div key={category} className="mb-6">
-          <h3 className="text-lg font-semibold mb-3 text-gray-300">{category}</h3>
+          <h3 className="text-xl font-semibold mb-3 text-gray-300">{category}</h3>
           <div className="flex flex-wrap gap-2">
             {skills.map((skill) => (
               <span 
@@ -159,7 +159,6 @@ const ExperienceSection = () => {
       location: 'Remote',
       duration: '05/2024 – 07/2024',
       description: [
-        'Tech Stack: HTML, CSS, Tailwind CSS, Bootstrap, React.js',
         'Developed responsive user interfaces using modern frontend technologies, ensuring seamless performance across devices.',
         'Integrated reusable UI components with React.js + Tailwind CSS, contributing to scalable and maintainable code-bases.',
         'Improved user engagement by 30% through optimization of layout structure, responsiveness, and accessibility.'
@@ -168,7 +167,7 @@ const ExperienceSection = () => {
     },
     {
       company: 'CHEGG India',
-      logo: '📚',
+      logo: <img src="https://img.icons8.com/?size=100&id=25423&format=png&color=000000" alt="CHEGG India" className="w-10 h-10" />,
       position: 'Subject Matter Expert',
       location: 'Remote',
       duration: '01/2022 – 02/2023',
@@ -188,13 +187,13 @@ const ExperienceSection = () => {
         {experiences.map((exp, index) => (
           <div key={index} className="flex gap-4 p-5 bg-[#111114] rounded-lg border border-gray-800">
             <div className="flex-shrink-0">
-              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-2xl">
+              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-2xl">
                 {exp.logo}
               </div>
             </div>
             <div className="flex-grow">
-              <h3 className="text-lg font-semibold mb-1">{exp.position}</h3>
-              <p className="text-gray-400 mb-1 text-base">{exp.company}, {exp.location}</p>
+              <h3 className="text-2xl font-semibold mb-1">{exp.position}</h3>
+              <p className="text-gray-400 mb-1 text-lg">{exp.company}, {exp.location}</p>
               <p className="text-sm text-gray-500 mb-3">{exp.duration}</p>
               
               <ul className="list-disc list-inside text-gray-300 space-y-1 mb-3 text-sm">
@@ -256,18 +255,18 @@ const EducationSection = () => {
       
       <div className="space-y-4">
         {education.map((edu, index) => (
-          <div key={index} className="flex gap-4 p-5 bg-[#111114] rounded-lg border border-gray-800">
+          <div key={index} className="flex gap-4 p-5 bg-[#101011] rounded-lg border border-gray-800">
             <div className="flex-shrink-0">
-              <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-2xl">
+              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center text-2xl">
                 {edu.logo}
               </div>
             </div>
             <div className="flex-grow">
-              <h3 className="text-lg font-semibold mb-1">{edu.degree}</h3>
-              <p className="text-gray-400 mb-1 text-base">{edu.institution}</p>
+              <h3 className="text-2xl font-semibold mb-1">{edu.degree}</h3>
+              <p className="text-gray-400 mb-1 text-lg">{edu.institution}</p>
               <p className="text-sm text-gray-500 mb-1">{edu.location}</p>
               <p className="text-sm text-gray-500 mb-1">{edu.duration}</p>
-              <p className="text-sm text-green-400 font-semibold">{edu.grade}</p>
+              <p className="text-sm text-lg font-semibold">{edu.grade}</p>
             </div>
           </div>
         ))}
@@ -343,18 +342,18 @@ const ProjectsSection = () => {
       
       <div className="mb-4">
         <div className="flex space-x-4">
-          <button className="px-3 py-1.5 bg-blue-600 text-white rounded-lg text-sm">Personal Projects</button>
+          <button className="px-3 py-1.5 bg-gray-700 text-gray-200 rounded-lg text-sm">Personal Projects</button>
         </div>
       </div>
       
       <div className="space-y-6">
         {projects.map((project, index) => (
-          <div key={index} className="p-5 bg-[#111114] rounded-lg border border-gray-800">
+          <div key={index} className="p-5 bg-[#101011] rounded-lg border border-gray-800">
             <div className="flex items-start gap-3 mb-3">
-              <div className="text-3xl">{project.icon}</div>
+              <div className="w-20 h-20 bg-transparent rounded-full flex items-center justify-center text-2xl">{project.icon}</div>
               <div className="flex-grow">
-                <h3 className="text-lg font-semibold mb-2">{project.name}</h3>
-                <p className="text-gray-300 mb-3 text-sm">{project.description}</p>
+                <h3 className="text-2xl font-semibold mb-2">{project.name}</h3>
+                <p className="text-gray-300 mb-3 text-lg">{project.description}</p>
                 
                 <ul className="list-disc list-inside text-gray-300 space-y-1 mb-4 text-sm">
                   {project.features.map((feature, idx) => (
@@ -367,17 +366,17 @@ const ProjectsSection = () => {
                     href={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-blue-400 hover:text-blue-300 underline text-sm"
+                    className="flex items-center gap-1 text-white-400 hover:text-blue-300 text-base"
                   >
-                    <span>↗</span> Live Demo
+                    <img src="https://img.icons8.com/?size=100&id=49411&format=png&color=000000" alt="Mail" className="w-6 h-6" /> Live Demo
                   </a>
                   <a 
                     href={project.viewCode}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-blue-400 hover:text-blue-300 underline text-sm"
+                    className="flex items-center gap-1 text-white-400 hover:text-blue-300 text-base"
                   >
-                    <span>🐙</span> View Code
+                    <img src="https://img.icons8.com/?size=100&id=BbkEmvb97OHk&format=png&color=000000" alt="Mail" className="w-6 h-6" /> View Code
                   </a>
                 </div>
                 

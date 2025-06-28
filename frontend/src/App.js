@@ -43,7 +43,7 @@ const Home = () => {
         </div>
         
         {/* Main Content - 60% width */}
-        <div className="lg:w-[60%] lg:ml-[40%]">
+        <div className="lg:w-[61%] lg:ml-[39%]">
           <main className="px-6 lg:px-8 py-6">
             <AboutSection />
             <SkillsSection />
