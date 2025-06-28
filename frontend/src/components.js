@@ -3,51 +3,51 @@ import React from 'react';
 // Profile Sidebar Component
 const ProfileSidebar = () => {
   return (
-    <div className="bg-[#111114] p-8 lg:p-12 border-r border-gray-800">
-      <div className="text-center mb-8">
+    <div className="bg-[#111114] p-6 lg:p-8 border-r border-gray-800 h-full">
+      <div className="text-center mb-6">
         <img 
           src="https://images.unsplash.com/photo-1590086782957-93c06ef21604" 
           alt="Profile" 
-          className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-gray-700"
+          className="w-28 h-28 rounded-full mx-auto mb-4 object-cover border-4 border-gray-700"
         />
-        <h1 className="text-3xl font-bold mb-2">Harsh Kharniwal</h1>
-        <p className="text-gray-400 text-lg mb-4">Full Stack Web Developer</p>
+        <h1 className="text-2xl font-bold mb-1">Harsh Kharniwal</h1>
+        <p className="text-gray-400 text-base mb-3">Full Stack Web Developer</p>
         <div className="flex items-center justify-center text-gray-400 mb-2">
           <span className="text-red-500 mr-2">📍</span>
-          <span>Rajasthan, India 🇮🇳</span>
+          <span className="text-sm">Rajasthan, India 🇮🇳</span>
         </div>
-        <p className="text-sm text-gray-500 italic">
+        <p className="text-xs text-gray-500 italic leading-relaxed">
           Building Real Products For Real Clients, Not Just More Projects
         </p>
       </div>
 
-      <div className="space-y-4 mb-8">
+      <div className="space-y-3 mb-6">
         <a 
           href="https://drive.google.com/file/d/1QO4vZNzPtKGBq8UG-h-0GvgOIKL576R_/view?usp=sharing" 
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors duration-200"
+          className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-lg transition-colors duration-200 text-sm font-medium"
         >
           📄 Resume
         </a>
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center space-x-3">
           <a href="mailto:harshkharniwal9351@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
-            <span className="text-2xl">✉️</span>
+            <span className="text-xl">✉️</span>
           </a>
           <a href="https://www.linkedin.com/in/harsh-kharniwal9351/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
-            <span className="text-2xl">💼</span>
+            <span className="text-xl">💼</span>
           </a>
           <a href="https://github.com/kharniwal-harsh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
-            <span className="text-2xl">🐙</span>
+            <span className="text-xl">🐙</span>
           </a>
         </div>
       </div>
 
-      <div className="border-t border-gray-800 pt-8">
-        <h3 className="text-xl font-semibold mb-4">Want to Work Together?</h3>
+      <div className="border-t border-gray-800 pt-6">
+        <h3 className="text-lg font-semibold mb-3">Want to Work Together?</h3>
         <a 
           href="mailto:harshkharniwal9351@gmail.com"
-          className="w-full block text-center bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-colors duration-200"
+          className="w-full block text-center bg-gray-800 hover:bg-gray-700 text-white px-4 py-2.5 rounded-lg transition-colors duration-200 text-sm"
         >
           Get in Touch
         </a>
