@@ -44,7 +44,7 @@ const Home = () => {
         
         {/* Main Content - 60% width */}
         <div className="lg:w-[60%] lg:ml-[40%]">
-          <main className="px-6 lg:px-12 py-8">
+          <main className="px-6 lg:px-8 py-6">
             <AboutSection />
             <SkillsSection />
             <ExperienceSection />
