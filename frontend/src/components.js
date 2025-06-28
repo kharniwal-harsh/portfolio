@@ -74,55 +74,55 @@ const AboutSection = () => {
 const SkillsSection = () => {
   const skillCategories = {
     Languages: [
-      { name: 'C++', color: 'bg-blue-600' },
-      { name: 'Python', color: 'bg-blue-500' },
-      { name: 'JavaScript', color: 'bg-yellow-600' },
-      { name: 'SQL', color: 'bg-orange-600' },
-      { name: 'HTML', color: 'bg-orange-700' },
-      { name: 'CSS', color: 'bg-blue-700' }
+      { name: 'C++', color: 'bg-blue-600 bg-opacity-20 text-blue-300 border-blue-500' },
+      { name: 'Python', color: 'bg-blue-600 bg-opacity-20 text-blue-300 border-blue-500' },
+      { name: 'JavaScript', color: 'bg-blue-600 bg-opacity-20 text-blue-300 border-blue-500' },
+      { name: 'SQL', color: 'bg-blue-600 bg-opacity-20 text-blue-300 border-blue-500' },
+      { name: 'HTML', color: 'bg-blue-600 bg-opacity-20 text-blue-300 border-blue-500' },
+      { name: 'CSS', color: 'bg-blue-600 bg-opacity-20 text-blue-300 border-blue-500' }
     ],
     Frameworks: [
-      { name: 'React.js', color: 'bg-cyan-500' },
-      { name: 'Tailwind CSS', color: 'bg-cyan-400' },
-      { name: 'EJS', color: 'bg-green-600' },
-      { name: 'Bootstrap', color: 'bg-purple-600' },
-      { name: 'HTML5', color: 'bg-orange-600' },
-      { name: 'CSS3', color: 'bg-blue-600' }
+      { name: 'React.js', color: 'bg-green-600 bg-opacity-20 text-green-300 border-green-500' },
+      { name: 'Tailwind CSS', color: 'bg-green-600 bg-opacity-20 text-green-300 border-green-500' },
+      { name: 'EJS', color: 'bg-green-600 bg-opacity-20 text-green-300 border-green-500' },
+      { name: 'Bootstrap', color: 'bg-green-600 bg-opacity-20 text-green-300 border-green-500' },
+      { name: 'HTML5', color: 'bg-green-600 bg-opacity-20 text-green-300 border-green-500' },
+      { name: 'CSS3', color: 'bg-green-600 bg-opacity-20 text-green-300 border-green-500' }
     ],
     Backend: [
-      { name: 'Node.js', color: 'bg-green-600' },
-      { name: 'Express.js', color: 'bg-gray-700' },
-      { name: 'REST APIs', color: 'bg-blue-700' }
+      { name: 'Node.js', color: 'bg-purple-600 bg-opacity-20 text-purple-300 border-purple-500' },
+      { name: 'Express.js', color: 'bg-purple-600 bg-opacity-20 text-purple-300 border-purple-500' },
+      { name: 'REST APIs', color: 'bg-purple-600 bg-opacity-20 text-purple-300 border-purple-500' }
     ],
     'Database & Storage': [
-      { name: 'MongoDB', color: 'bg-green-600' },
-      { name: 'Firebase', color: 'bg-orange-500' },
-      { name: 'MySQL', color: 'bg-blue-800' }
+      { name: 'MongoDB', color: 'bg-red-600 bg-opacity-20 text-red-300 border-red-500' },
+      { name: 'Firebase', color: 'bg-red-600 bg-opacity-20 text-red-300 border-red-500' },
+      { name: 'MySQL', color: 'bg-red-600 bg-opacity-20 text-red-300 border-red-500' }
     ],
     'Machine Learning & Data': [
-      { name: 'Pandas', color: 'bg-blue-600' },
-      { name: 'NumPy', color: 'bg-blue-700' },
-      { name: 'Matplotlib', color: 'bg-orange-600' },
-      { name: 'Seaborn', color: 'bg-cyan-600' },
-      { name: 'Scikit-learn', color: 'bg-orange-700' },
-      { name: 'dlib', color: 'bg-green-700' },
-      { name: 'OpenCV', color: 'bg-blue-800' }
+      { name: 'Pandas', color: 'bg-yellow-600 bg-opacity-20 text-yellow-300 border-yellow-500' },
+      { name: 'NumPy', color: 'bg-yellow-600 bg-opacity-20 text-yellow-300 border-yellow-500' },
+      { name: 'Matplotlib', color: 'bg-yellow-600 bg-opacity-20 text-yellow-300 border-yellow-500' },
+      { name: 'Seaborn', color: 'bg-yellow-600 bg-opacity-20 text-yellow-300 border-yellow-500' },
+      { name: 'Scikit-learn', color: 'bg-yellow-600 bg-opacity-20 text-yellow-300 border-yellow-500' },
+      { name: 'dlib', color: 'bg-yellow-600 bg-opacity-20 text-yellow-300 border-yellow-500' },
+      { name: 'OpenCV', color: 'bg-yellow-600 bg-opacity-20 text-yellow-300 border-yellow-500' }
     ],
     'Tools & Platforms': [
-      { name: 'Git', color: 'bg-orange-600' },
-      { name: 'GitHub', color: 'bg-gray-800' },
-      { name: 'Netlify', color: 'bg-teal-600' },
-      { name: 'Streamlit', color: 'bg-red-600' },
-      { name: 'VS Code', color: 'bg-blue-600' },
-      { name: 'Postman', color: 'bg-orange-500' },
-      { name: 'GitHub Pages', color: 'bg-gray-700' }
+      { name: 'Git', color: 'bg-orange-600 bg-opacity-20 text-orange-300 border-orange-500' },
+      { name: 'GitHub', color: 'bg-orange-600 bg-opacity-20 text-orange-300 border-orange-500' },
+      { name: 'Netlify', color: 'bg-orange-600 bg-opacity-20 text-orange-300 border-orange-500' },
+      { name: 'Streamlit', color: 'bg-orange-600 bg-opacity-20 text-orange-300 border-orange-500' },
+      { name: 'VS Code', color: 'bg-orange-600 bg-opacity-20 text-orange-300 border-orange-500' },
+      { name: 'Postman', color: 'bg-orange-600 bg-opacity-20 text-orange-300 border-orange-500' },
+      { name: 'GitHub Pages', color: 'bg-orange-600 bg-opacity-20 text-orange-300 border-orange-500' }
     ],
     Others: [
-      { name: 'OOP', color: 'bg-purple-600' },
-      { name: 'DBMS', color: 'bg-indigo-600' },
-      { name: 'Operating Systems', color: 'bg-gray-600' },
-      { name: 'Problem Solving (DSA)', color: 'bg-green-600' },
-      { name: 'RESTful APIs', color: 'bg-blue-700' }
+      { name: 'OOP', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' },
+      { name: 'DBMS', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' },
+      { name: 'Operating Systems', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' },
+      { name: 'Problem Solving (DSA)', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' },
+      { name: 'RESTful APIs', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' }
     ]
   };
 
@@ -137,7 +137,7 @@ const SkillsSection = () => {
             {skills.map((skill) => (
               <span 
                 key={skill.name}
-                className={`px-3 py-1.5 rounded-full text-sm font-medium text-white ${skill.color}`}
+                className={`px-3 py-1.5 rounded-full text-sm font-medium border ${skill.color}`}
               >
                 {skill.name}
               </span>
