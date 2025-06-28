@@ -188,7 +188,7 @@ const ExperienceSection = () => {
         {experiences.map((exp, index) => (
           <div key={index} className="flex gap-4 p-5 bg-[#111114] rounded-lg border border-gray-800">
             <div className="flex-shrink-0">
-              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-lg">
+              <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center text-2xl">
                 {exp.logo}
               </div>
             </div>
@@ -207,7 +207,7 @@ const ExperienceSection = () => {
                 {exp.skills.map((skill) => (
                   <span 
                     key={skill}
-                    className="px-2 py-1 bg-green-700 text-white text-xs rounded-full"
+                    className="px-2 py-1 bg-green-600 bg-opacity-20 text-green-300 border border-green-500 text-xs rounded-full"
                   >
                     {skill}
                   </span>
