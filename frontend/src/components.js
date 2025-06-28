@@ -281,7 +281,6 @@ const ProjectsSection = () => {
   const projects = [
     {
       name: 'Attendance System Using Face Recognition',
-      tech: 'Flask, Python, Face Recognition, MongoDB',
       description: 'Engineered a facial recognition-based attendance system using Flask + MongoDB, leveraging deep learning with Dlib and Face Recognition for accurate identity verification.',
       features: [
         'Engineered a facial recognition-based attendance system using Flask + MongoDB, leveraging deep learning with Dlib and Face Recognition for accurate identity verification.',
@@ -295,7 +294,6 @@ const ProjectsSection = () => {
     },
     {
       name: 'Interactive 3D Portfolio Website',
-      tech: 'React.js, Three.js, Tailwind CSS, Git/GitHub Pages',
       description: 'Built a visually engaging 3D personal portfolio using React.js + Three.js, integrating custom shaders and camera controls to deliver an immersive user experience.',
       features: [
         'Built a visually engaging 3D personal portfolio using React.js + Three.js, integrating custom shaders and camera controls to deliver an immersive user experience.',
@@ -310,8 +308,7 @@ const ProjectsSection = () => {
     },
     {
       name: 'WhatsApp-Chat-Analyzer',
-      tech: 'Python, Matplotlib, Pandas, Plotly, Streamlit',
-      description: 'WhatsApp chat Analyzer is a WebApp where anyone either tech or non-tech person can analyze their WhatsApp chat data. With this, you can get information such as Which person is active in the chat?',
+      description: 'WhatsApp chat Analyzer is a WebApp where anyone either tech or non-tech person can analyze their WhatsApp chat data.',
       features: [
         'WhatsApp chat Analyzer is a WebApp where anyone either tech or non-tech person can analyze their WhatsApp chat data. With this, you can get information such as Which person is active in the chat?',
         'And many other insights you can get from this Analyzer. Anyone obviously, who has WhatsApp account can use this WebApp.',
@@ -325,7 +322,6 @@ const ProjectsSection = () => {
     },
     {
       name: 'Smart Agriculture System using IoT',
-      tech: 'Arduino | Soil Moisture Sensor | DHT11 | Water Pump Relay Module | LCD Display | C/C++',
       description: 'Developed an IoT-based smart agriculture system to automate irrigation by monitoring real-time soil moisture, temperature, and humidity levels.',
       features: [
         'Developed an IoT-based smart agriculture system to automate irrigation by monitoring real-time soil moisture, temperature, and humidity levels.',
@@ -355,46 +351,45 @@ const ProjectsSection = () => {
         {projects.map((project, index) => (
           <div key={index} className="p-5 bg-[#111114] rounded-lg border border-gray-800">
             <div className="flex items-start gap-3 mb-3">
-              <div className="text-2xl">{project.icon}</div>
+              <div className="text-3xl">{project.icon}</div>
               <div className="flex-grow">
-                <h3 className="text-lg font-semibold mb-1">{project.name}</h3>
-                <p className="text-sm text-green-400 font-medium mb-2">{project.tech}</p>
+                <h3 className="text-lg font-semibold mb-2">{project.name}</h3>
                 <p className="text-gray-300 mb-3 text-sm">{project.description}</p>
                 
-                <ul className="list-disc list-inside text-gray-300 space-y-1 mb-3 text-sm">
+                <ul className="list-disc list-inside text-gray-300 space-y-1 mb-4 text-sm">
                   {project.features.map((feature, idx) => (
                     <li key={idx}>{feature}</li>
                   ))}
                 </ul>
                 
-                <div className="flex flex-wrap gap-1.5 mb-3">
-                  {project.techStack.map((tech) => (
-                    <span 
-                      key={tech}
-                      className="px-2 py-1 bg-green-700 text-white text-xs rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                
-                <div className="flex gap-3">
+                <div className="flex gap-4 mb-3">
                   <a 
                     href={project.liveDemo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 underline text-sm"
+                    className="flex items-center gap-1 text-blue-400 hover:text-blue-300 underline text-sm"
                   >
-                    Live Demo
+                    <span>↗</span> Live Demo
                   </a>
                   <a 
                     href={project.viewCode}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 underline text-sm"
+                    className="flex items-center gap-1 text-blue-400 hover:text-blue-300 underline text-sm"
                   >
-                    View Code
+                    <span>🐙</span> View Code
                   </a>
+                </div>
+                
+                <div className="flex flex-wrap gap-1.5">
+                  {project.techStack.map((tech) => (
+                    <span 
+                      key={tech}
+                      className="px-2 py-1 bg-green-600 bg-opacity-20 text-green-300 border border-green-500 text-xs rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
