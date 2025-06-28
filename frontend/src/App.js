@@ -35,7 +35,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#111114] text-white">
+    <div className="min-h-screen bg-[#101011] text-white">
       <div className="flex flex-col lg:flex-row">
         {/* Sidebar - 40% width */}
         <div className="lg:w-[40%] lg:fixed lg:h-screen lg:overflow-y-auto">
