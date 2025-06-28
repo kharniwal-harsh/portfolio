@@ -258,7 +258,7 @@ const EducationSection = () => {
         {education.map((edu, index) => (
           <div key={index} className="flex gap-4 p-5 bg-[#111114] rounded-lg border border-gray-800">
             <div className="flex-shrink-0">
-              <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-lg">
+              <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-2xl">
                 {edu.logo}
               </div>
             </div>
