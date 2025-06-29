@@ -38,12 +38,12 @@ const Home = () => {
     <div className="min-h-screen bg-[#101011] text-white">
       <div className="flex flex-col lg:flex-row">
         {/* Sidebar - 40% width */}
-        <div className="lg:w-[40%] lg:fixed lg:h-screen lg:overflow-y-auto">
+        <div className="lg:w-[37%] lg:fixed lg:h-screen lg:overflow-y-auto">
           <ProfileSidebar />
         </div>
         
         {/* Main Content - 60% width */}
-        <div className="lg:w-[61%] lg:ml-[39%]">
+        <div className="lg:w-[64%] lg:ml-[38%]">
           <main className="px-6 lg:px-8 py-6">
             <AboutSection />
             <SkillsSection />

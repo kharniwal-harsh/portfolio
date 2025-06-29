@@ -289,7 +289,7 @@ const ProjectsSection = () => {
       techStack: ['Flask', 'Python', 'Face Recognition', 'MongoDB', 'Dlib', 'JWT'],
       liveDemo: 'https://kharniwal-harsh.github.io/attendance-system-demo/',
       viewCode: 'https://github.com/kharniwal-harsh/attendance-system-demo',
-      icon: '👤'
+      icon: <img src="/hero-image.svg" alt="Attendance System Icon" className="w-full h-full object-cover bg-blue-700" />
     },
     {
       name: 'Interactive 3D Portfolio Website',
@@ -303,7 +303,7 @@ const ProjectsSection = () => {
       techStack: ['React.js', 'Three.js', 'Tailwind CSS', 'Git', 'GitHub Pages', 'GLTF'],
       liveDemo: 'https://kharniwal-harsh.github.io/threejs-portfolio-main/',
       viewCode: 'https://github.com/kharniwal-harsh/threejs-portfolio-main',
-      icon: '🌐'
+      icon: <img src="/grid1.png" alt="Interactive 3D Portfolio Icon" className="w-full h-full object-cover" />
     },
     {
       name: 'WhatsApp-Chat-Analyzer',
@@ -317,7 +317,7 @@ const ProjectsSection = () => {
       techStack: ['Python', 'Matplotlib', 'Pandas', 'Plotly', 'Streamlit'],
       liveDemo: 'https://whatsappchatanalyzerbyhk.streamlit.app/',
       viewCode: 'https://github.com/kharniwal-harsh/wp_analyzer/blob/main/whatsapp-chat-analyser-master/README.md',
-      icon: '💬'
+      icon: <img src="/wp1.png" alt="wp" className="w-full h-full object-cover" />
     },
     {
       name: 'Smart Agriculture System using IoT',
@@ -332,7 +332,7 @@ const ProjectsSection = () => {
       techStack: ['Arduino', 'Soil Moisture Sensor', 'DHT11', 'Water Pump Relay', 'LCD Display', 'C/C++'],
       liveDemo: 'https://github.com/kharniwal-harsh',
       viewCode: 'https://github.com/kharniwal-harsh',
-      icon: '🌱'
+      icon: <img src="/iot.jpg" alt="iot" className="w-full h-full object-cover" />
     }
   ];
 
@@ -350,7 +350,7 @@ const ProjectsSection = () => {
         {projects.map((project, index) => (
           <div key={index} className="p-5 bg-[#101011] rounded-lg border border-gray-800">
             <div className="flex items-start gap-3 mb-3">
-              <div className="w-20 h-20 bg-transparent rounded-full flex items-center justify-center text-2xl">{project.icon}</div>
+              <div className="w-[38rem] h-[20rem] bg-transparent rounded-lg overflow-hidden flex items-center justify-center">{project.icon}</div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-semibold mb-2">{project.name}</h3>
                 <p className="text-gray-300 mb-3 text-lg">{project.description}</p>
