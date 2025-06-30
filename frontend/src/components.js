@@ -35,10 +35,10 @@ const ProfileSidebar = () => {
             <img src="https://img.icons8.com/?size=100&id=tnnUFgHrPmR0&format=png&color=000000" alt="Mail" className="w-7 h-7" />
           </a>
           <a href="https://www.linkedin.com/in/harsh-kharniwal9351/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
-            <img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="Mail" className="w-8 h-7" />
+            <img src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000" alt="LinkedIn" className="w-8 h-7" />
           </a>
           <a href="https://github.com/kharniwal-harsh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
-            <img src="https://img.icons8.com/?size=100&id=BbkEmvb97OHk&format=png&color=000000" alt="Mail" className="w-7 h-7" />
+            <img src="https://img.icons8.com/?size=100&id=BbkEmvb97OHk&format=png&color=000000" alt="GitHub" className="w-7 h-7" />
           </a>
         </div>
       </div>
@@ -229,7 +229,7 @@ const EducationSection = () => {
       location: 'Kota, RAJASTHAN',
       duration: '2021 – 2025',
       grade: 'CGPA: 8.14',
-      logo: '🎓'
+      logo: <img src="/rtu.jpg" alt="Attendance System Icon" className="w-full h-full  rounded-full object-cover bg-white-700" />
     },
     {
       degree: 'CBSE-Higher Secondary Education (XII)',
@@ -237,7 +237,7 @@ const EducationSection = () => {
       location: 'Kota, India',
       duration: '2020 - 2021',
       grade: 'PERCENTAGE: 78%',
-      logo: '📚'
+      logo: <img src="/lbs.png" alt="lbs" className="w-full h-full  rounded-full object-cover bg-white-700" />
     },
     {
       degree: 'CBSE-Secondary Education (X)',
@@ -245,7 +245,7 @@ const EducationSection = () => {
       location: 'Kota, India',
       duration: '2018 - 2019',
       grade: 'PERCENTAGE: 79.2%',
-      logo: '📖'
+      logo: <img src="/lbs.png" alt="lbs" className="w-full h-full  rounded-full object-cover bg-white-700" />
     }
   ];
 
