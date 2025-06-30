@@ -167,7 +167,7 @@ const ExperienceSection = () => {
     },
     {
       company: 'CHEGG India',
-      logo: <img src="https://img.icons8.com/?size=100&id=25423&format=png&color=000000" alt="CHEGG India" className="w-10 h-10" />,
+      logo: <img src="/chegg.svg" alt="CHEGG India" className="w-10 h-10" />,
       position: 'Subject Matter Expert',
       location: 'Remote',
       duration: '01/2022 – 02/2023',
@@ -317,7 +317,7 @@ const ProjectsSection = () => {
       techStack: ['Python', 'Matplotlib', 'Pandas', 'Plotly', 'Streamlit'],
       liveDemo: 'https://whatsappchatanalyzerbyhk.streamlit.app/',
       viewCode: 'https://github.com/kharniwal-harsh/wp_analyzer/blob/main/whatsapp-chat-analyser-master/README.md',
-      icon: <img src="/wp1.png" alt="wp" className="w-full h-full object-cover" />
+      icon: <img src="/wp.jpg" alt="wp" className="w-full h-full object-cover" />
     },
     {
       name: 'Smart Agriculture System using IoT',
@@ -330,8 +330,8 @@ const ProjectsSection = () => {
         'Designed a modular system allowing easy extension to additional sensors or IoT cloud platforms for remote monitoring.'
       ],
       techStack: ['Arduino', 'Soil Moisture Sensor', 'DHT11', 'Water Pump Relay', 'LCD Display', 'C/C++'],
-      liveDemo: 'https://github.com/kharniwal-harsh',
-      viewCode: 'https://github.com/kharniwal-harsh',
+      liveDemo: 'https://github.com/kharniwal-harsh/Smart-Agriculture-System-Using-IOT',
+      viewCode: 'https://github.com/kharniwal-harsh/Smart-Agriculture-System-Using-IOT',
       icon: <img src="/iot.jpg" alt="iot" className="w-full h-full object-cover" />
     }
   ];
@@ -350,10 +350,10 @@ const ProjectsSection = () => {
         {projects.map((project, index) => (
           <div key={index} className="p-5 bg-[#101011] rounded-lg border border-gray-800">
             <div className="flex items-start gap-3 mb-3">
-              <div className="w-[38rem] h-[20rem] bg-transparent rounded-lg overflow-hidden flex items-center justify-center">{project.icon}</div>
+              <div className="w-[37rem] h-[23rem] bg-transparent rounded-lg overflow-hidden flex items-center justify-center">{project.icon}</div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-semibold mb-2">{project.name}</h3>
-                <p className="text-gray-300 mb-3 text-lg">{project.description}</p>
+                <p className="text-gray-100 mb-3 text-base">{project.description}</p>
                 
                 <ul className="list-disc list-inside text-gray-300 space-y-1 mb-4 text-sm">
                   {project.features.map((feature, idx) => (
