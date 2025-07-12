@@ -11,7 +11,7 @@ const ProfileSidebar = () => {
           className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-0 border-gray-700"
         />
         <h1 className="text-4xl font-bold mb-2">Harsh Kharniwal</h1>
-        <p className="text-gray-400 text-xl mb-4">Full Stack Web Developer</p>
+        <p className="text-gray-400 text-xl mb-4">Software Developer</p>
         <div className="flex items-center  text-gray-400 mb-4">
           <span className="text-red-500 mr-2">📍</span>
           <span className="text-xl">Rajasthan, India 🇮🇳</span>
@@ -63,7 +63,7 @@ const AboutSection = () => {
       <h2 className="text-3xl font-bold mb-6">About Me</h2>
       <div className="text-gray-300 space-y-4 leading-relaxed text-base">
         <p>
-          I'm a 20-year-old, Full Stack Developer with a knack for building products that make a difference. A Computer Science undergrad with a strong foundation in full-stack development, real-time systems, and applied ML. Proven record of building scalable applications with measurable impact across performance and engagement.
+          I'm a 20-year-old, Software Developer with a knack for building products that make a difference. A Computer Science graduate with a strong foundation in full-stack development, real-time systems, and applied ML. Proven record of building scalable applications with measurable impact across performance and engagement.
         </p>
       </div>
     </section>
@@ -117,12 +117,12 @@ const SkillsSection = () => {
       { name: 'Postman', color: 'bg-orange-600 bg-opacity-20 text-orange-300 border-orange-500' },
       { name: 'GitHub Pages', color: 'bg-orange-600 bg-opacity-20 text-orange-300 border-orange-500' }
     ],
-    Others: [
-      { name: 'OOP', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' },
-      { name: 'DBMS', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' },
+    'Relavent Coursework': [
+      { name: 'Object Oriented Programming', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' },
+      { name: 'Database Management Systems', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' },
       { name: 'Operating Systems', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' },
-      { name: 'Problem Solving (DSA)', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' },
-      { name: 'RESTful APIs', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' }
+      { name: 'Internet of Things (IoT)', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' },
+      // { name: 'RESTful APIs', color: 'bg-gray-600 bg-opacity-20 text-gray-300 border-gray-500' }
     ]
   };
 
@@ -224,7 +224,7 @@ const ExperienceSection = () => {
 const EducationSection = () => {
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
+      degree: 'Bachelor of Technology in Computer Science',
       institution: 'Rajasthan Technical University',
       location: 'Kota, RAJASTHAN',
       duration: '2021 – 2025',
