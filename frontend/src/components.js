@@ -63,7 +63,7 @@ const AboutSection = () => {
       <h2 className="text-3xl font-bold mb-6">About Me</h2>
       <div className="text-gray-300 space-y-4 leading-relaxed text-base">
         <p>
-          I'm a 20-year-old, Software Developer with a knack for building products that make a difference. A Computer Science graduate with a strong foundation in full-stack development, real-time systems, and applied ML. Proven record of building scalable applications with measurable impact across performance and engagement.
+          I'm a 20-year-old, Software Developer with a knack for building products that make a difference. A Computer Science graduate from Rajasthan Technical University, with a strong foundation in full-stack development, real-time systems, and applied ML. Proven record of building scalable applications with measurable impact across performance and engagement.
         </p>
       </div>
     </section>
@@ -153,7 +153,7 @@ const SkillsSection = () => {
 const ExperienceSection = () => {
   const experiences = [
     {
-      company: 'CodeAlpha',
+      company: 'OctaNet',
       logo: '💻',
       position: 'Frontend Developer Intern',
       location: 'Remote',
@@ -279,14 +279,30 @@ const EducationSection = () => {
 const ProjectsSection = () => {
   const projects = [
     {
+      name: 'Quick.AI – AI SaaS Platform',
+      description: 'Developed a full-stack AI SaaS application offering tools like Article Generator, Blog Title Generator, Image Generator, Background & Object Remover, and Resume Analyzer.',
+      features: [
+        'Implemented subscription-based access with Clerk for secure authentication, account management, and integrated billing system to handle premium feature unlocks.',
+        'Utilized Neon’s serverless PostgreSQL for scalable, reliable data storage and easy branching for development.',
+        'Designed a modular, responsive front-end in React, interfacing with Express & Node.js backend APIs to serve AI functionalities.',
+        'Deployed the application seamlessly on Vercel for optimized global delivery.'
+      ],
+      techStack: ['React', 'Node.js', 'Express',' PostgreSQL (Neon)', 'Clerk', 'Vercel'],
+      liveDemo: 'https://quickai-gs.vercel.app/',
+      viewCode: 'https://github.com/kharniwal-harsh',
+      icon: <img src="/logo.svg" alt="Quick.AI Icon" className="w-full h-full  bg-transparent" />
+    },
+    {
       name: 'Attendance System Using Face Recognition',
       description: 'Engineered a facial recognition-based attendance system using Flask + MongoDB, leveraging deep learning with Dlib and Face Recognition for accurate identity verification.',
       features: [
-        'Engineered a facial recognition-based attendance system using Flask + MongoDB, leveraging deep learning with Dlib and Face Recognition for accurate identity verification.',
-        'Integrated JWT-based authentication (Passport.js), achieving a 100% reduction in unauthorized access and enhancing overall security.',
-        'Automated attendance notifications and performance reports, increasing student attendance compliance by 30%'
+        'Built admin & lecturer dashboards to create/manage classes, register students with multiple face samples, and monitor attendance statistics.',
+        'Added functionality to filter attendance by year & class, download attendance in Excel, and auto-notify students with <75% attendance.',
+        'Designed intuitive front-end with Flask & Jinja templates, including secure login & user profile management.',
+        'Hosted a static live demo on GitHub showcasing the complete workflow.',
+        'Aimed to reduce time & errors in attendance marking, improving efficiency over traditional methods.'
       ],
-      techStack: ['Flask', 'Python', 'Face Recognition', 'MongoDB', 'Dlib', 'JWT'],
+      techStack: ['Flask', 'Python', 'Face Recognition', 'MongoDB', 'Dlib', 'Github'],
       liveDemo: 'https://kharniwal-harsh.github.io/attendance-system-demo/',
       viewCode: 'https://github.com/kharniwal-harsh/attendance-system-demo',
       icon: <img src="/hero-image.svg" alt="Attendance System Icon" className="w-full h-full object-cover bg-blue-700" />
